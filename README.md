@@ -25,6 +25,7 @@ The goal of this portfolio is to demonstrate practical, hands-on knowledge of Ku
 
 | Report | Vulnerability | Severity | Environment |
 |---|---|---|---|
+| [EKS Cluster Games — All 5 Challenges](./eks-cluster-games-findings.md) | RBAC enumeration, IMDS credential theft, image history secrets, node identity escalation, IRSA misconfiguration | Critical | Wiz EKS Cluster Games |
 | [RBAC Least Privileges](./rbac-least-privileges-findings.md) | Overly permissive service account exposing cluster secrets via REST API | High | Kubernetes Goat |
 | [SSRF in the Kubernetes World](./ssrf-kubernetes-world-findings.md) | Server Side Request Forgery allowing access to internal cluster services | Critical | Kubernetes Goat |
 
@@ -37,7 +38,9 @@ The goal of this portfolio is to demonstrate practical, hands-on knowledge of Ku
 - Direct Kubernetes API server interaction via REST
 - Container image layer analysis and secrets extraction
 - AWS Instance Metadata Service (IMDS) credential theft
+- AWS IRSA trust policy misconfiguration exploitation
 - Docker registry authentication and image inspection
+- IAM role assumption via web identity tokens
 - kubectl, crane, curl, git, base64 decoding
 - Professional security findings documentation
 
@@ -54,6 +57,7 @@ The goal of this portfolio is to demonstrate practical, hands-on knowledge of Ku
 | `base64` | Decoding encoded secrets |
 | `git` | Source code and commit history analysis |
 | `kind` | Local Kubernetes cluster via Docker |
+| `jq` | JSON parsing and extraction |
 
 ---
 
